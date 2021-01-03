@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"/>
+  <title>桜 島 麻 衣</title>
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./loading.css"/>
+</head>
+<body>
+
+<div id="zloading"><div class="loader">加载中...</div></div>
+
+<!--导航栏-->
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color:#87ceeb">
+  <a class="navbar-brand" href="#">SakuraJima Mai</a>
+  <button id="nav-icon3" class="navbar-toggler border border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="outline:none">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<hr/>
+<!--导航栏结束-->
+
+<div class="container">
+  <div class="card">
+      <img class="card-img-top mx-auto" style="max-width:45%;height:auto" src="./img/avatar.png" alt="Avatar"/>
+      <div class="card-body">
+        <h4 class="card-title text-center" style="color:#87cefa;line-height:0px">桜島 麻衣</h4>
+        <h6 class="text-center" style="color:#87cefa;font-size:10px">サクラジママイ</h4><br/>
+        <h5 class="card-title text-muted" style="line-height:0">Profile</h4>
+            <table class="table card-text text-muted">
+              <tr>
+                <td>職業</td>
+                <td>女優·モデル</td>
+              </tr>
+              <tr>
+                <td>生年月日</td>
+                <td>12月02日</td>
+              </tr>
+              <tr>
+                <td>出身地</td>
+                <td>神奈川県</td>
+              </tr>
+              <tr>
+                <td>血液型</td>
+                <td>AB型</td>
+              </tr>
+            </table>
+        <p class="card-text text-muted">6歳のとき朝の連ドラ「ここのえ」にてデビュー。<br>その後、CM、TVドラマ、映画、モデルとして幅広く活躍。<br/>春公開予定の映画「ハルノミライ」にて復帰後初主演。</p>
+      </div>
+  </div>
+</div>
+<!--轮播图-->
+<div class="container">
+<div class="jumbotron bg-light">
+<p class="text-center">轮播图</p>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+<!---->
+    <div class="carousel-item active">
+      <img src="./img/bg-1.jpg" style="display:block;width:100%"/>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/bg-2.jpg" style="display:block;width:100%"/>
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/bg-3.png" style="display:block;width:100%"/>
+    </div>
+<!---->
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+</div>
+<!--轮播图结束-->
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+window.onload = function(){
+	$("#zloading").hide();
+};
+</script>
+</body>
+</html>
